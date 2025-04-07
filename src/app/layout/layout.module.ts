@@ -3,13 +3,17 @@ import { CommonModule } from '@angular/common';
 import { LayoutComponent } from './layout.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { NzLayoutModule } from 'ng-zorro-antd/layout';
+import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
 
 @NgModule({
   imports: [
     CommonModule,
+    NzLayoutModule,
     LayoutComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    NzDropDownModule
   ],
   exports: [
     LayoutComponent
