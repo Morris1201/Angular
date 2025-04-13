@@ -11,6 +11,7 @@ interface menuInfo{
 
 @Component({
   selector: 'app-header',
+  standalone: true,
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css'],
   imports: [FooterComponent, NzDropDownModule, NzIconModule, CommonModule]
