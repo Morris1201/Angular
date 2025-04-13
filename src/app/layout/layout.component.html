@@ -9,16 +9,10 @@
       <nz-breadcrumb-item>App</nz-breadcrumb-item>
     </nz-breadcrumb> -->
     <!-- <div class="inner-content">Content</div> -->
-     <ng-container *ngTemplateOutlet="refTemplate; context: classObj">
+  <ng-template #ref>
+    <span>This is a template.{{version}}</span>
+  </ng-template>
 
-     </ng-container>
-
-     <ng-template #refTemplate let-name="name" let-teacher="teacher" let-link="link">
-      <p>container && template</p>
-      <h4>{{name}}</h4>
-      <h5>老師: {{teacher}}</h5>
-      <h5>請點擊連結: {{link}}</h5>
-     </ng-template>
   </nz-content>
   <nz-footer>Ant Design ©2020 Implement By Angular</nz-footer>
 </nz-layout>
